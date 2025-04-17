@@ -1,0 +1,77 @@
+CSCID_SORTING_TIMESTAMP,TIMESTAMP_CONFLICT_RESOLUTION,VALID_SOURCE_SYSTEMS_CHECK,,,,
+createTimestamp|ASC,updateSourceSystemTimestamp|DESC,sourceSystemName |Loyalty|Digital|RDS|Registry | CC2,,,,
+CLUSTER_NAME,PRIORITY_RANK,SOURCE,COMPLTENESS_FIELDS,TIMESTAMP_CHECK,CLUSTER_FIELDS,MATCHING_CRITERIA
+Name,1,CC2,firstName| lastName |middleName |prefix |suffix,updateSourceSystemTimestamp|DESC,firstName| lastName |middleName |prefix |suffix|preferredFirstName|preferredLastName|finDivnNumber,
+Name,1,CC2,firstName| lastName |middleName |prefix,updateSourceSystemTimestamp|DESC,firstName| lastName |middleName |prefix |suffix|preferredFirstName|preferredLastName|finDivnNumber,
+Name,1,CC2,firstName| lastName |middleName |suffix,updateSourceSystemTimestamp|DESC,firstName| lastName |middleName |prefix |suffix|preferredFirstName|preferredLastName|finDivnNumber,
+Name,2,Loyalty,firstName| lastName |middleName,,firstName| lastName |middleName |prefix |suffix|preferredFirstName|preferredLastName|finDivnNumber,
+Name,3,Digital,firstName| lastName |middleName,,firstName| lastName |middleName |prefix |suffix|preferredFirstName|preferredLastName|finDivnNumber,
+Name,4,Loyalty,firstName| lastName,,firstName| lastName |middleName |prefix |suffix|preferredFirstName|preferredLastName|finDivnNumber,
+Name,5,Digital,firstName| lastName,,firstName| lastName |middleName |prefix |suffix|preferredFirstName|preferredLastName|finDivnNumber,
+Name,6,RDS,firstName| lastName,,firstName| lastName |middleName |prefix |suffix|preferredFirstName|preferredLastName|finDivnNumber,
+Name,7,Registry,firstName| lastName,,firstName| lastName |middleName |prefix |suffix|preferredFirstName|preferredLastName|finDivnNumber,
+Name,8,CC2,firstName| lastName |middleName |prefix |suffix,,firstName| lastName |middleName |prefix |suffix|preferredFirstName|preferredLastName|finDivnNumber,
+Name,8,CC2,firstName| lastName |middleName |prefix,,firstName| lastName |middleName |prefix |suffix|preferredFirstName|preferredLastName|finDivnNumber,
+Name,8,CC2,firstName| lastName |middleName |suffix,,firstName| lastName |middleName |prefix |suffix|preferredFirstName|preferredLastName|finDivnNumber,
+Name,9,CC2,firstName| lastName |middleName,,firstName| lastName |middleName |prefix |suffix|preferredFirstName|preferredLastName|finDivnNumber,
+Name,10,CC2,firstName| lastName,,firstName| lastName |middleName |prefix |suffix|preferredFirstName|preferredLastName|finDivnNumber,
+PrimaryAddress,1,Loyalty,addrLine1Txt | addrLine2Txt | cityName | stateCode |postalCode,,all,addrLine1Txt | postalCode | firstName | lastName |addrType
+PrimaryAddress,2,Loyalty,addrLine1Txt | addrLine2Txt | cityName |postalCode,,all,addrLine1Txt | postalCode | firstName | lastName |addrType
+PrimaryAddress,3,Loyalty,addrLine1Txt | addrLine2Txt | stateCode |postalCode,,all,addrLine1Txt | postalCode | firstName | lastName |addrType
+PrimaryAddress,4,Loyalty,addrLine1Txt | cityName | stateCode |postalCode,,all,addrLine1Txt | postalCode | firstName | lastName |addrType
+PrimaryAddress,5,Loyalty,addrLine1Txt | cityName |postalCode,,all,addrLine1Txt | postalCode | firstName | lastName |addrType
+PrimaryAddress,6,Loyalty,addrLine1Txt | stateCode |postalCode,,all,addrLine1Txt | postalCode | firstName | lastName |addrType
+PrimaryAddress,7,Loyalty,addrLine1Txt | postalCode,,all,addrLine1Txt | postalCode | firstName | lastName |addrType
+PrimaryAddress,8,CC2,addrLine1Txt | addrLine2Txt | cityName | stateCode |postalCode,,all,addrLine1Txt | postalCode | firstName | lastName |addrType
+PrimaryAddress,9,CC2,addrLine1Txt | addrLine2Txt | cityName |postalCode,,all,addrLine1Txt | postalCode | firstName | lastName |addrType
+PrimaryAddress,10,CC2,addrLine1Txt | addrLine2Txt | stateCode |postalCode,,all,addrLine1Txt | postalCode | firstName | lastName |addrType
+PrimaryAddress,11,CC2,addrLine1Txt | cityName | stateCode |postalCode,,all,addrLine1Txt | postalCode | firstName | lastName |addrType
+PrimaryAddress,12,CC2,addrLine1Txt | cityName |postalCode,,all,addrLine1Txt | postalCode | firstName | lastName |addrType
+PrimaryAddress,13,CC2,addrLine1Txt | stateCode |postalCode,,all,addrLine1Txt | postalCode | firstName | lastName |addrType
+PrimaryAddress,14,CC2,addrLine1Txt | postalCode,,all,addrLine1Txt | postalCode | firstName | lastName |addrType
+primaryEmail,1,Digital,emailAddress,,all,emailAddress|emailType
+primaryEmail,1,Loyalty,emailAddress,,all,emailAddress|emailType
+primaryEmail,2,Registry,emailAddress,,all,emailAddress|emailType
+primaryEmail,3,RDS,emailAddress,,all,emailAddress|emailType
+primaryEmail,4,CC2,emailAddress,,all,emailAddress|emailType
+primaryPhone,1,Loyalty,phoneNumber,,all,phoneNumber|phoneType
+primaryPhone,2,Digital,phoneNumber,,all,phoneNumber|phoneType
+primaryPhone,3,Registry,phoneNumber,,all,phoneNumber|phoneType
+primaryPhone,4,RDS,phoneNumber,,all,phoneNumber|phoneType
+primaryPhone,5,CC2,phoneNumber,,all,phoneNumber|phoneType
+DOB,1,Loyalty,birthDayNumber | birthMonthNumber,,birthDayNumber | birthMonthNumber,
+DOB,2,Digital,birthDayNumber | birthMonthNumber,,birthDayNumber | birthMonthNumber,
+DOB,3,CC2,birthDayNumber | birthMonthNumber,,birthDayNumber | birthMonthNumber,
+AdditionalAddress,1,Digital,addrLine1Txt|addrLine2Txt|addrLine3Txt|cityName|stateCode|postalCode|firstName|middleName|lastName|prefix|emailAddress|phoneNumber,,all,addrLine1Txt|postalCode|firstName|lastName|addrType
+AdditionalAddress,1,Digital,addrLine1Txt|addrLine2Txt|addrLine3Txt|cityName|stateCode|postalCode|firstName|middleName|lastName|emailAddress|phoneNumber,,all,addrLine1Txt|postalCode|firstName|lastName|addrType
+AdditionalAddress,1,Digital,addrLine1Txt|addrLine2Txt|addrLine3Txt|cityName|stateCode|postalCode|firstName|lastName|prefix|emailAddress|phoneNumber,,all,addrLine1Txt|postalCode|firstName|lastName|addrType
+AdditionalAddress,1,Digital,addrLine1Txt|addrLine2Txt|addrLine3Txt|cityName|stateCode|postalCode|firstName|lastName|emailAddress|phoneNumber,,all,addrLine1Txt|postalCode|firstName|lastName|addrType
+AdditionalAddress,2,Registry,addrLine1Txt|addrLine2Txt|addrLine3Txt|cityName|stateCode|postalCode|firstName|middleName|lastName|emailAddress|phoneNumber,,all,addrLine1Txt|postalCode|firstName|lastName|addrType
+AdditionalAddress,2,Registry,addrLine1Txt|addrLine2Txt|addrLine3Txt|cityName|stateCode|postalCode|firstName|lastName|emailAddress|phoneNumber,,all,addrLine1Txt|postalCode|firstName|lastName|addrType
+AdditionalAddress,3,Digital,addrLine1Txt|addrLine2Txt|cityName|stateCode|postalCode|firstName|middleName|lastName|prefix|emailAddress|phoneNumber,,all,addrLine1Txt|postalCode|firstName|lastName|addrType
+AdditionalAddress,3,Digital,addrLine1Txt|addrLine2Txt|cityName|stateCode|postalCode|firstName|middleName|lastName|emailAddress|phoneNumber,,all,addrLine1Txt|postalCode|firstName|lastName|addrType
+AdditionalAddress,3,Digital,addrLine1Txt|addrLine2Txt|cityName|stateCode|postalCode|firstName|lastName|prefix|emailAddress|phoneNumber,,all,addrLine1Txt|postalCode|firstName|lastName|addrType
+AdditionalAddress,3,Digital,addrLine1Txt|addrLine2Txt|cityName|stateCode|postalCode|firstName|lastName|emailAddress|phoneNumber,,all,addrLine1Txt|postalCode|firstName|lastName|addrType
+AdditionalAddress,4,Registry,addrLine1Txt|addrLine2Txt|cityName|stateCode|postalCode|firstName|middleName|lastName|emailAddress|phoneNumber,,all,addrLine1Txt|postalCode|firstName|lastName|addrType
+AdditionalAddress,4,Registry,addrLine1Txt|addrLine2Txt|cityName|stateCode|postalCode|firstName|lastName|emailAddress|phoneNumber,,all,addrLine1Txt|postalCode|firstName|lastName|addrType
+AdditionalAddress,5,Digital,addrLine1Txt|addrLine2Txt|addrLine3Txt|cityName|stateCode|postalCode|firstName|middleName|lastName|prefix|emailAddress,,all,addrLine1Txt|postalCode|firstName|lastName|addrType
+AdditionalAddress,5,Digital,addrLine1Txt|addrLine2Txt|addrLine3Txt|cityName|stateCode|postalCode|firstName|middleName|lastName|prefix|phoneNumber,,all,addrLine1Txt|postalCode|firstName|lastName|addrType
+AdditionalAddress,5,Digital,addrLine1Txt|addrLine2Txt|addrLine3Txt|cityName|postalCode|firstName|lastName|emailAddress|phoneNumber,,all,addrLine1Txt|postalCode|firstName|lastName|addrType
+AdditionalAddress,6,Registry,addrLine1Txt|addrLine2Txt|addrLine3Txt|cityName |stateCode|postalCode|firstName|middleName|lastName|emailAddress,,all,addrLine1Txt|postalCode|firstName|lastName|addrType
+AdditionalAddress,6,Registry,addrLine1Txt|addrLine2Txt|addrLine3Txt|cityName|stateCode|postalCode|firstName|middleName|lastName|phoneNumber,,all,addrLine1Txt|postalCode|firstName|lastName|addrType
+AdditionalAddress,6,Registry,addrLine1Txt|addrLine2Txt|addrLine3Txt|cityName|postalCode|firstName|lastName|emailAddress|phoneNumber,,all,addrLine1Txt|postalCode|firstName|lastName|addrType
+AdditionalAddress,7,Digital,addrLine1Txt|addrLine2Txt|cityName|postalCode|firstName|lastName|emailAddress|phoneNumber,,all,addrLine1Txt|postalCode|firstName|lastName|addrType
+AdditionalAddress,7,Registry,addrLine1Txt|addrLine2Txt|cityName|postalCode|firstName|lastName|emailAddress|phoneNumber,,all,addrLine1Txt|postalCode|firstName|lastName|addrType
+AdditionalAddress,7,Digital,addrLine1Txt|cityName|postalCode|firstName|lastName|emailAddress|phoneNumber,,all,addrLine1Txt|postalCode|firstName|lastName|addrType
+AdditionalAddress,7,Registry,addrLine1Txt|cityName|postalCode|firstName|lastName|emailAddress|phoneNumber,,all,addrLine1Txt|postalCode|firstName|lastName|addrType
+AdditionalAddress,8,RDS,addrLine1Txt|cityName|stateCode|postalCode|firstName|lastName,,all,addrLine1Txt|postalCode|firstName|lastName|addrType
+AdditionalAddress,9,Digital,addrLine1Txt|postalCode|firstName|lastName,,all,addrLine1Txt|postalCode|firstName|lastName|addrType
+AdditionalAddress,9,Registry,addrLine1Txt|postalCode|firstName|lastName,,all,addrLine1Txt|postalCode|firstName|lastName|addrType
+AdditionalAddress,9,CC2,addrLine1Txt|postalCode|firstName|lastName,,all,addrLine1Txt|postalCode|firstName|lastName|addrType
+AdditionalAddress,9,RDS,addrLine1Txt|postalCode|firstName|lastName,,all,addrLine1Txt|postalCode|firstName|lastName|addrType
+AdditionalEmail,1,All,emailAddress,,all,emailAddress|emailType
+AdditionalPhone,1,All,phoneNumber,,all,phoneNumber|phoneType
+Affiliation,1,All,,,all,
+WhatsApp,1,All,id,updateSourceSystemTimestamp|DESC,all,
+WeChat,1,All,id,updateSourceSystemTimestamp|DESC,all,
+Audit,1,All,createSourceSystemTimestamp|updateSourceSystemTimestamp|createTimestamp|lastUpdateTimestamp |sourceSystemName |createdByUser|updatedByUser,updateSourceSystemTimestamp|DESC,all,
